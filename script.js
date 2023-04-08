@@ -209,7 +209,7 @@ function showTest(question, count){
 
 
     let trueAnswer = optionsMap[options[0]]
-    trueAnswer.innerHTML = question.trueAnswer.substring(0)
+    trueAnswer.innerHTML = question.trueAnswer.substring(1)
     trueAnswer.style.opacity = '1'
     addClickEvent(trueAnswer, true)
     options.shift()
