@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 3px;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 30px 40px;
+    overflow: hidden;
+    max-width: 1200px;
+   
+}
+
+header p,header a {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+header input {
+    font-size: 1.5rem;
+    margin: 0 20px;
+}
+
+header input::-webkit-file-upload-button{
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px gray solid;
+    color: gray;
+    
+}
+
+header input::-webkit-file-upload-button:hover{
+    color: black;
+    border-color:black;
+    transition: color 0.1s, border-color 0.1s;
+}
+
+header input[type="file"]{
+    width: 320px;
+    color: #7c0000;
+}
+
+header a{
+    cursor: pointer;
+    transition: color 0.1s;
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover {
+    color: #7c0000;
+}
+
+
+main div:first-child {
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+
+#count-of-questions, #count-label, #submit-count {
+    display: none;
+    margin-top: 20px;
+}
+
+
+main div div {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    margin: 20px 0;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+
+#quest{
+    background-color:rgb(236, 236, 236);
+    padding: 7px 0;
+}
+
+#option-A,
+#option-B,
+#option-C,
+#option-D,
+#option-E {
+    padding: 7px 0;
+} 
+
+.opt-ques > *{
+    transition: background-color 0.05s;
+}
+.opt-ques > *:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+
+#next {
+    opacity: 0;
+    font-size: 1.3rem;
+    padding: 2px 5px;
+}
+
+#true-false, #ques-remain {
+    font-size: 1.3rem;
+    padding: 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    header{
+        display: block;      
+    }
+}

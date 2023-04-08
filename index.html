@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Mixer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p>choose an appropriate txt file: </p>
+        <input type="file" id="file" accept=".txt">
+        <!-- <p>read info &#9432</p> -->
+        <!-- <a href="info.html">read info &#9432</a> -->
+    </header>
+
+    <main>
+
+        <div>
+            <label for="ques">choose questions:</label>
+            <input type="text" name="ques" id="choosen-ques">
+            <button id="submit-questions">submit</button>
+            <span id="number-of-questions"></span>
+
+            <br><label id="count-label" for="count">how many questions do you want to get:</label>
+            <input type="number" name="count" id="count-of-questions">
+            <button id="submit-count">submit</button>
+        </div>
+
+        <div class="opt-ques">
+            <div id="quest"></div>
+            <div id="option-A"></div>
+            <div id="option-B"></div>
+            <div id="option-C"></div>
+            <div id="option-D"></div>
+            <div id="option-E"></div>
+        </div>
+
+        <button id="next">next</button>
+        
+        <span id="ques-remain"></span>
+        <span id="true-false"></span>
+        
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
